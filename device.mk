@@ -224,7 +224,10 @@ PRODUCT_PACKAGES += \
    FrameworksResOverlayGM \
    SettingsProviderOverlayGM \
    TelephonyOverlayGM \
-   WifiOverlayGM
+   WifiOverlayGM \
+
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/lineage-overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
