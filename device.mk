@@ -75,6 +75,15 @@ PRODUCT_PACKAGES += \
     bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
