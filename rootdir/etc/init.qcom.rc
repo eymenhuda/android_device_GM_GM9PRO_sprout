@@ -31,6 +31,7 @@ import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.qcom.factory.rc
 import /vendor/etc/init/hw/init.logger.rc
+import /vendor/etc/init/hw/init.zram.rc
 
 on early-init
 
@@ -393,6 +394,36 @@ on post-fs-data
 
     #Start move time data to /data/vendor once post-fs-data done
     start vendor.move_time_data
+
+on post-fs-data
+    chmod 0666 /sys/module/cpu_boost/parameters/input_boost_freq
+    chmod 0666 /sys/module/cpu_boost/parameters/input_boost_ms
+    chmod 0666 /sys/module/cpu_boost/parameters/sched_boost
+    chown system system /sys/module/cpu_boost/parameters/input_boost_freq
+    chown system system /sys/module/cpu_boost/parameters/input_boost_ms
+    chown system system /sys/module/cpu_boost/parameters/sched_boost
+    chmod 0666 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chmod 0666 /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chmod 0666 /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+    chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown system system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chown system system /sys/class/kgsl/kgsl-3d0/default_pwrlevel
+    chmod 0666 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0666 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+    chmod 0666 /proc/sys/kernel/sched_boost
+    chown system system /proc/sys/kernel/sched_boost
+    chmod 0666 /dev/cpuset/top-app/cpus
+    chmod 0666 /dev/cpuset/foreground/cpus
+    chown system system /dev/cpuset/top-app/cpus
+    chown system system /dev/cpuset/foreground/cpus
+    chmod 0666 /dev/stune/top-app/schedtune.boost
+    chmod 0666 /dev/stune/foreground/schedtune.boost
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /dev/stune/foreground/schedtune.boost
+	chmod 0666 /sys/module/cpu_boost/parameters/sched_boost_on_input
+	chown system system /sys/module/cpu_boost/parameters/sched_boost_on_input
 
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start

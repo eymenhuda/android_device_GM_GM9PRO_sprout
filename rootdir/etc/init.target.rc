@@ -485,4 +485,9 @@ service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
      user root
      group system wakelock
 
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
 
+    # Fix zram priority
+    exec - root root -- /vendor/bin/sh -c "swapoff /dev/block/zram0; swapon -p 32758 /dev/block/zram0"

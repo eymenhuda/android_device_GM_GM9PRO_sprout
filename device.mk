@@ -330,7 +330,7 @@ PRODUCT_PACKAGES += \
     init.msm.usb.configfs.rc \
     init.qcom.usb.sh \
     ueventd.qcom.rc \
-    init.logger.rc
+    init.zram.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \
