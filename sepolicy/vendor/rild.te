@@ -1,0 +1,2 @@
+# Allow rild to read files in /persist
+r_dir_file(rild, persist_file)

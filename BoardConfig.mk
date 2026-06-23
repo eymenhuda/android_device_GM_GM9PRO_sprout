@@ -115,6 +115,8 @@ VENDOR_SECURITY_PATCH := 2024-02-05
 
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_VNDK_VERSION := current

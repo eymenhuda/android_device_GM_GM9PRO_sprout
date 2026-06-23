@@ -1,0 +1,9 @@
+ro.vendor.ril.svlte1x                   u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
+
+persist.camera.lc_open_eis_flag    u:object_r:camera_prop:s0
+persist.camera.                         u:object_r:vendor_default_prop:s0
+persist.vendor.camera.                  u:object_r:camera_prop:s0
+
+vendor.powerhal.                        u:object_r:vendor_power_prop:s0
+

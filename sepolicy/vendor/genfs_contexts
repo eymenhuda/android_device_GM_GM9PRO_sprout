@@ -1,0 +1,17 @@
+# Real-time clock
+genfscon sysfs /devices/soc/qpnp-rtc-8/rtc u:object_r:sysfs_rtc:s0
+
+genfscon sysfs /devices/soc/soc:fpc1020 u:object_r:sysfs_fpc:s0
+
+# Power
+genfscon debugfs /system_stats                                  u:object_r:debugfs_rpm:s0
+genfscon proc /android_touch                                    u:object_r:proc_doubletap_gesture:s0
+
+# devfreq
+genfscon sysfs /class/devfreq/soc:qcom,cpubw u:object_r:sysfs_devfreq:s0
+genfscon sysfs /class/devfreq/soc:qcom,gpubw u:object_r:sysfs_devfreq:s0
+genfscon sysfs /class/devfreq/soc:qcom,mincpubw u:object_r:sysfs_devfreq:s0
+genfscon sysfs /class/devfreq/soc:qcom,memlat-cpu0 u:object_r:sysfs_devfreq:s0
+genfscon sysfs /class/devfreq/soc:qcom,memlat-cpu4 u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,cpubw u:object_r:sysfs_devfreq:s0
+genfscon sysfs /devices/soc/soc:qcom,cpubw/devfreq/soc:qcom,cpubw u:object_r:sysfs_devfreq:s0

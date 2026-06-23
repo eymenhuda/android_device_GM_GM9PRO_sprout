@@ -1,0 +1,12 @@
+type sysfs_wifi, sysfs_type, fs_type;
+
+type sysfs_fpc, sysfs_type, fs_type;
+type sysfs_cpubw, sysfs_type, fs_type;
+
+# DT2W
+type sysfs_doubletap_gesture, sysfs_type, fs_type;
+type proc_doubletap_gesture, proc_type, fs_type;
+
+# Power
+type debugfs_rpm, debugfs_type, fs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;

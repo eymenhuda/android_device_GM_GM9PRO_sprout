@@ -1,0 +1,22 @@
+type hal_fingerprint_fpc, domain, data_between_core_and_vendor_violators;
+hal_server_domain(hal_fingerprint_fpc, hal_fingerprint)
+
+type hal_fingerprint_fpc_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_fingerprint_fpc)
+
+r_dir_file(hal_fingerprint_fpc, firmware_file)
+r_dir_file(hal_fingerprint_fpc, sysfs_devfreq)
+
+allow hal_fingerprint_fpc fingerprintd_data_file:dir rw_dir_perms;
+allow hal_fingerprint_fpc fingerprintd_data_file:file create_file_perms;
+allow hal_fingerprint_fpc tee_device:chr_file { open read write ioctl };
+allow hal_fingerprint_fpc uhid_device:chr_file rw_file_perms;
+# Ew
+allow hal_fingerprint_fpc sysfs:file w_file_perms;
+
+allow hal_fingerprint_fpc sysfs_fpc:file rw_file_perms;
+allow hal_fingerprint_fpc sysfs_fpc:dir r_dir_perms;
+binder_call(hal_fingerprint_fpc, system_server)
+allow hal_fingerprint_fpc sysfs_cpubw:dir search;
+
+set_prop(hal_fingerprint_fpc, ctl_stop_prop)
