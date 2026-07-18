@@ -779,6 +779,15 @@ vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 
+# Vibrator
+vendor/bin/hw/vendor.qti.hardware.vibrator.service
+vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
+vendor/lib64/android.hardware.vibrator-V1-ndk_platform.so
+vendor/lib64/libqtivibratoreffect.so
+vendor/lib64/libsoc_helper.so
+vendor/lib64/vendor.qti.hardware.vibrator.impl.so
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
