@@ -122,20 +122,20 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service
+
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0_32 \
     android.frameworks.displayservice@1.0.vendor \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl \
-    gralloc.sdm660 \
-    hwcomposer.sdm660 \
+    android.frameworks.displayservice@1.0 \
+    libdisplayconfig \
+    libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
-    memtrack.sdm660 \
-    vendor.display.config@1.9 \
-    vendor.qti.hardware.display.composer@2.1
+    libtinyxml \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Display Device Config
 PRODUCT_COPY_FILES += \
