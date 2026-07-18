@@ -693,6 +693,12 @@ vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
 # GPS
+vendor/lib/android.hardware.power@1.0.so
+vendor/lib/android.hardware.power@1.1.so
+vendor/lib/android.hardware.power@1.2.so
+vendor/lib64/android.hardware.power@1.0.so
+vendor/lib64/android.hardware.power@1.1.so
+vendor/lib64/android.hardware.power@1.2.so
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti
 vendor/bin/garden_app
 vendor/bin/loc_launcher
