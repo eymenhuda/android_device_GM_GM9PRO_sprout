@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl \
-    lights.sdm660
+    lights.qcom
 
 # Low Power Whitelist
 PRODUCT_COPY_FILES += \
