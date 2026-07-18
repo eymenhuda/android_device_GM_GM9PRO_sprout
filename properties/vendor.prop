@@ -83,6 +83,7 @@ sys.usb.configfs=0
 
 # Bluetooth
 vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.soc=cherokee
 ro.vendor.bluetooth.wipower=false
 
 # Camera
