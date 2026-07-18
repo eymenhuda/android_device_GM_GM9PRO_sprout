@@ -403,6 +403,10 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # WiFi
+WIFI_DRIVER_STATE_CTRL_PARAM := /dev/wlan
+WIFI_DRIVER_STATE_ON := ON
+WIFI_DRIVER_STATE_OFF := OFF
+
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
