@@ -92,7 +92,7 @@
         "10000",
         "80"
       ],
-      "DefaultIndex": 2,
+      "DefaultIndex": 1,
       "ResetOnInit": true
     },
     {
@@ -131,10 +131,18 @@
       "Values": [
         "762",
         "2929",
+        "5931",
         "6881"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
+    },
+    {
+      "Name": "CPUBWHystLength",
+      "Path": "/sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_length",
+      "Values": [
+        "0"
+      ]
     },
     {
       "Name": "PMQoSCpuDmaLatency",
@@ -334,7 +342,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "647000000"
+      "Value": "0"
     }
   ]
 }
