@@ -122,7 +122,15 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-service
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display \
+    vendor.qti.hardware.display.allocator-service \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    gralloc.sdm660 \
+    hwcomposer.sdm660 \
+    memtrack.sdm660
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -131,7 +139,14 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libgralloc.qti \
     libqdMetaData \
-    libqdMetaData.system \
+    libqdutils \
+    libqservice \
+    libdrmutils \
+    libgpu_tonemapper \
+    libgralloccore \
+    libgrallocutils \
+    libsdmcore \
+    libsdmutils \
     libtinyxml \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.mapper@1.1.vendor \
