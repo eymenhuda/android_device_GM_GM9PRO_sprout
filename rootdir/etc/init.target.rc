@@ -165,7 +165,8 @@ on boot
 
     # DT2W
     chown root system /sys/android_touch/doubletap2wake
-    chmod 666 /sys/android_touch/doubletap2wake
+    chmod 0660 /sys/android_touch/doubletap2wake
+    write /sys/android_touch/doubletap2wake 1
 
     # runin
     chown system system /sys/class/power_supply/battery/charging_enabled
