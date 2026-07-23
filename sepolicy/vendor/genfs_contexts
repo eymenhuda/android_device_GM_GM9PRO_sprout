@@ -1,7 +1,7 @@
 # Real-time clock
 genfscon sysfs /devices/soc/qpnp-rtc-8/rtc u:object_r:sysfs_rtc:s0
 
-genfscon sysfs /devices/soc/soc:fpc1020 u:object_r:sysfs_fpc:s0
+genfscon sysfs /devices/platform/soc/soc:fpc1020 u:object_r:sysfs_fpc:s0
 
 # Power
 genfscon debugfs /system_stats                                  u:object_r:debugfs_rpm:s0
