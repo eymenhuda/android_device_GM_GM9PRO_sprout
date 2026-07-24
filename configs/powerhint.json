@@ -243,6 +243,24 @@
       "Value": "5931"
     },
     {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUForceClkOn",
+      "Duration": 1000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUForceRailOn",
+      "Duration": 1000,
+      "Value": "1"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUIdleTimer",
+      "Duration": 1000,
+      "Value": "10000"
+    },
+    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
