@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     libqservice \
     libdrmutils \
     libgpu_tonemapper \
+    libgralloccore \
     libgrallocutils \
     libsdmcore \
     libsdmutils \
