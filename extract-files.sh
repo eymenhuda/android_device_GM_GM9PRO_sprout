@@ -57,6 +57,7 @@ function blob_fixup() {
     case "${1}" in
         system_ext/lib64/lib-imsvideocodec.so)
             "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+            "${PATCHELF}" --replace-needed "libqdMetaData.so" "libqdMetaData.system.so" "${2}"
             ;;
         vendor/lib/hw/camera.sdm660.so)
             "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
