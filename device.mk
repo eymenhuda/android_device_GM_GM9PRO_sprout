@@ -213,6 +213,7 @@ PRODUCT_COPY_FILES += \
 # Keystore
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor \
     android.hardware.keymaster@3.0.vendor
 
 # Lights
@@ -245,7 +246,8 @@ PRODUCT_COPY_FILES += \
 # Network
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -342,7 +344,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2 \
     android.hardware.secure_element@1.2.vendor \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor \
+    libsysutils.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
