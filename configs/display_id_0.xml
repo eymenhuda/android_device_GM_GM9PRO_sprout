@@ -23,22 +23,4 @@
             <nits>450.0</nits>
         </point>
     </screenBrightnessMap>
-
-    <hdrBrightnessConfig>
-        <minimumHdrPercentOfScreen>0.1</minimumHdrPercentOfScreen>
-        <sdrHdrRatioMap>
-            <point>
-                <sdrNits>2.0</sdrNits>
-                <hdrRatio>8.0</hdrRatio>
-            </point>
-            <point>
-                <sdrNits>250.0</sdrNits>
-                <hdrRatio>2.0</hdrRatio>
-            </point>
-            <point>
-                <sdrNits>450.0</sdrNits>
-                <hdrRatio>1.0</hdrRatio>
-            </point>
-        </sdrHdrRatioMap>
-    </hdrBrightnessConfig>
 </displayConfiguration>
