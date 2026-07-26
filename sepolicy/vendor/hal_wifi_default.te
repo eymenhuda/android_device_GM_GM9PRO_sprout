@@ -3,3 +3,6 @@ allow hal_wifi_default sysfs_wifi:file w_file_perms;
 
 # Allow hal_wifi_default to write proc_net
 allow hal_wifi_default proc_net:file rw_file_perms;
+
+# Device-specific WLAN control node is written by the init trigger below.
+allow init wlan_device:chr_file w_file_perms;
