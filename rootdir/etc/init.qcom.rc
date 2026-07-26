@@ -559,6 +559,10 @@ on property:vold.decrypt=trigger_restart_framework
     start qcom-c_main-sh
     start wcnss-service
 
+# Bring up the legacy QCA WLAN driver before the AIDL Wi-Fi HAL creates wlan0.
+on property:init.svc.vendor.wifi_hal_legacy=running
+    write /dev/wlan ON
+
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
