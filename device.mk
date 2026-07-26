@@ -418,7 +418,7 @@ WIFI_DRIVER_STATE_ON := ON
 WIFI_DRIVER_STATE_OFF := OFF
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     wificond \
     libwifi-hal-qcom \
