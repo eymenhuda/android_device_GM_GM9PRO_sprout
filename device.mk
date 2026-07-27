@@ -351,6 +351,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.target.rc \
     fstab.qcom \
+    fstab.qcom.ramdisk \
     init.recovery.qcom.rc \
     init.qcom.usb.rc \
     init.msm.usb.configfs.rc \
