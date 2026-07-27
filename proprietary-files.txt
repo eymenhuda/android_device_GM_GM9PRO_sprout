@@ -435,7 +435,7 @@ vendor/lib64/libmmcamera_faceproc2.so|1196dd8def4e711b71dc863f7f189e69d163f948
 vendor/lib64/libmmcamera_tintless_algo.so|f4433f9e83641f1020405a08b67fddc7b6b2ace9
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so|01f90bb8c6e412f6e5be24f05fba7947da3b5b2b
 
-# Charger
+# Charger - from gm9pro-user-9-PKQ1.180904.001-254-release-keys
 vendor/bin/hvdcp_opti
 
 # DPM - from DDV_sprout - RKQ1.210607.001 - 00WW_3_440
@@ -794,7 +794,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics
+# Graphics - v@490
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -806,6 +806,7 @@ vendor/lib/libCB.so
 vendor/lib/libOpenCL.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libc2d30_bltlib.so
+vendor/lib/libeglc2d.so
 vendor/lib/libgsl.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
@@ -840,6 +841,12 @@ vendor/lib64/libtinyxml2_1.so
 
 # IRQ Balance
 vendor/bin/msm_irqbalance
+
+# Keystore - from gm9pro-user-9-PKQ1.180904.001-254-release-keys
+vendor/lib/hw/keystore.sdm660.so
+vendor/lib64/hw/keystore.sdm660.so
+vendor/lib64/libkeystore-wifi-hidl.so
+vendor/lib64/libkeystore-engine-wifi-hidl.so
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
