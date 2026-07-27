@@ -22,7 +22,7 @@ PRODUCT_MODEL := GM 9 Pro
 TARGET_VENDOR := GM
 TARGET_VENDOR_PRODUCT_NAME := GM9PRO_sprout
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	PRIVATE_BUILD_DESC="gm9pro-user 8.1.0 OPM1.171019.019 55 release-keys"
-
-BUILD_FINGERPRINT := GM/GM9PRO/GM9PRO_sprout:8.1.0/OPM1.171019.019/55:user/release-keys
+    BuildDesc="gm9pro-user 8.1.0 OPM1.171019.019 55 release-keys" \
+    BuildFingerprint=GM/GM9PRO/GM9PRO_sprout:8.1.0/OPM1.171019.019/55:user/release-keys \
+    DeviceProduct=GM9PRO_sprout
 PRODUCT_GMS_CLIENTID_BASE := android-a1-gm-rev1
