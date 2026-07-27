@@ -417,10 +417,6 @@ PRODUCT_HOST_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
-# Vibrator
-PRODUCT_PACKAGES += \
-   android.hardware.vibrator-service.legacy
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
