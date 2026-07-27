@@ -213,9 +213,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service \
-    android.hardware.light@2.0-impl \
-    lights.qcom
+    android.hardware.light-service.lineage
 
 # Low Power Whitelist
 PRODUCT_COPY_FILES += \
