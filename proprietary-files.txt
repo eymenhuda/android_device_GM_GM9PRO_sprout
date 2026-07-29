@@ -1011,9 +1011,9 @@ vendor/lib64/libqmiservices.so|52770edf3e35f5376f3d0a131636f3213c9e59fa
 system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625a
 -system_ext/framework/qcrilhook.jar|f2888f922b8347417dfa86741feb8348795fce6f
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|a268324fd64b178fbcc8293a58e656e4dcd82ffa
-vendor/bin/hw/qcrild|77d0168fbad7db01eec8abd9df25f19c05411eb4
+vendor/bin/hw/qcrild|0e3b74c43cea4d1b6e9e5f5bbf7b5824d9fe10c9
 vendor/bin/ATFWD-daemon|e1d493d251232dc7787e8f9fe76c027830c63855
-vendor/bin/netmgrd|a7e71e2b2fa5d26d5c34f3f51492f2d792dd1388
+vendor/bin/netmgrd|22ca76db16e5eaa1e4faed38b6c62ed1d050ae0f
 vendor/bin/port-bridge|9312db5658f45206df6d51e78469d2d6a2d72b46
 vendor/bin/qrtr-cfg|9019f1c99cb23913f540433285af0d26c397c121
 vendor/bin/qrtr-lookup|fb31961d7c966f09e5c77a2be17aa8af702fe90b
@@ -1035,7 +1035,7 @@ vendor/lib64/libconfigdb.so|384a92f75e1de720214ab1ba0c021f5fac7c81ac
 vendor/lib64/libdsi_netctrl.so|f17cd8b204f509bccb718ca9fc8df1b42a8ca6a3
 vendor/lib64/liblqe.so|d74bf39354a737d04a360518f38880127b359cfe
 vendor/lib64/libmdmdetect.so|4dee2a700aad658f3f30a6da069c867307ed371c
-vendor/lib64/libnetmgr.so|1969424f8ee65d87df9529771908c752c13a6bc5
+vendor/lib64/libnetmgr.so|c6122b4df4a2bca39984f8bd3dc265af01a47149
 vendor/lib64/libnetmgr_common.so|4c69f01b5c0ebd82c6c92b3a0445fe83070d23fd
 vendor/lib64/libnetmgr_nr_fusion.so|bfab8145c7cd09f359ccf656b410d25373e78a29
 vendor/lib64/libnetmgr_rmnet_ext.so|49a42ef71c7619f5e241d953d5ba45e63216270c
@@ -1048,13 +1048,13 @@ vendor/lib64/libqcrilFramework.so|dc62bd4f3685c420d43f4f5f4141d5908212df86
 vendor/lib64/libqcrildatactl.so|f1f58dd57ded81c5c929a838aec0c16b27de54e1
 vendor/lib64/libqrtr.so|b22ee7df87b35ba88b518f0b821cc601cd612183
 vendor/lib64/libqsocket.so|3fa01c9aff6ed96a5ea9886c7696a046c929e339
-vendor/lib64/libril-qc-hal-qmi.so|09865dc82b52325949511f856bab308a791e9e68
+vendor/lib64/libril-qc-hal-qmi.so|73cb43f5628dd2536d6c3a3a0ec047225fcbe4cc
 vendor/lib64/libril-qc-logger.so|39fd61a8d9ed802aea046d17204ef88434522980
 vendor/lib64/libril-qc-ltedirectdisc.so|5b8a00483247f743cf92fb93f9a8234f72728dec
 vendor/lib64/libril-qc-qmi-1.so|f2cfd28538b20b7371dd2f00255376cc64ac0cd9
 vendor/lib64/libril-qc-radioconfig.so|ca8594506fd6e0706908bafd3d11ae24a810c3c0
 vendor/lib64/libril-qcril-hook-oem.so|1536b0a3bccdc1dcc06512248c14238a3405aaeb
-vendor/lib64/librilqmiservices.so|249cc6a381ee15b7f705520eca41497b12997b8f
+vendor/lib64/librilqmiservices.so|0e9b4d4f71e2d3d9e2375bff210765ef5a741c70
 vendor/lib64/libsettings.so|7a0a3e2f5f085d7212920f6394fc3a2b516683e1
 vendor/lib64/libsystem_health_mon.so|2cc55d78ea00b9fe8af9cd88fd8ef8c31ee5f494
 vendor/lib64/qcrild_librilutils.so|f12ebc05420621d930ffe7f4b4859117e3c9fc35
@@ -1095,7 +1095,7 @@ vendor/radio/qcril_database/qcril.db|86286c24a227cb968dac1f7ccfe0ad26fe4fd462
 # IMS - from DDV_sprout - RKQ1.210607.001 - 00WW_3_440
 -system_ext/app/uceShimService/uceShimService.apk|3b5b6fb89581e92eb151fcc9ddffe53609e6dd4c
 system_ext/lib64/lib-imscamera.so|49ead972646b09d700556d63676673b3e8af2036
-system_ext/lib64/lib-imsvideocodec.so|47512183b3330ad566d241149c4e16f33122dab1|59eb76eeb018de4142d1bd36dd751c73b3ca61ce
+system_ext/lib64/lib-imsvideocodec.so|59eb76eeb018de4142d1bd36dd751c73b3ca61ce
 system_ext/lib64/lib-imsvt.so|4f96cc5f27551d0b6cb11ad6447d9ce8829dde47
 system_ext/lib64/lib-imsvtextutils.so|336c0ffed49a0a4605f41b488771ee0217fa80f0
 system_ext/lib64/lib-imsvtutils.so|b4a39a247f767723ce67182ee92f526c029a019d
