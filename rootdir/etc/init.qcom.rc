@@ -406,10 +406,6 @@ on post-fs-data
     chown system system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
     chown system system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
     chown system system /sys/class/kgsl/kgsl-3d0/default_pwrlevel
-    chmod 0666 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chmod 0666 /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
-    chown system system /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
 
     # libperfmgr cpubw permissions
     write /sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/governor bw_hwmon
