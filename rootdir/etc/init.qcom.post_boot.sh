@@ -2140,8 +2140,8 @@ case "$target" in
         case "$soc_id" in
                                 "317" | "324" | "325" | "326" | "345" | "346" )
 
-            # Keep big cluster more responsive but leave core_ctl enabled.
-            echo 2 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+            # Keep all big cores available for sustained top-app workloads.
+            echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
             echo 50 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
             echo 25 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
             echo 250 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
@@ -2181,7 +2181,7 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
             echo 0 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/rate_limit_us
             echo 82 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_load
-            echo 1401600 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
+            echo 1843200 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/hispeed_freq
             echo 902400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
             # online CPU4
@@ -2190,7 +2190,7 @@ case "$target" in
             echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
             echo 0 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/rate_limit_us
             echo 80 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_load
-            echo 1958400 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
+            echo 2208000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/hispeed_freq
             echo 1401600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
             # bring all cores online
