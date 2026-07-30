@@ -4,6 +4,12 @@ ro.vendor.ril.svdo                      u:object_r:vendor_radio_prop:s0
 persist.camera.lc_open_eis_flag    u:object_r:camera_prop:s0
 persist.camera.                         u:object_r:vendor_default_prop:s0
 persist.vendor.camera.                  u:object_r:camera_prop:s0
+ro.bluetooth.ftm_enabled                u:object_r:vendor_public_vendor_default_prop:s0
+persist.env.fastdorm.enabled            u:object_r:vendor_public_vendor_default_prop:s0
+ro.data.large_tcp_window_size           u:object_r:vendor_public_vendor_default_prop:s0
+crypto.driver.load                      u:object_r:vendor_public_vendor_default_prop:s0
+drmdiag.load                            u:object_r:vendor_public_vendor_default_prop:s0
+persist.ims.regmanager.mode             u:object_r:vendor_public_vendor_default_prop:s0
+persist.usb.hvdcp.detect                u:object_r:vendor_public_vendor_default_prop:s0
 
 vendor.powerhal.                        u:object_r:vendor_power_prop:s0
-
