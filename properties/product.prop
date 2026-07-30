@@ -1,6 +1,24 @@
 # Charger
 ro.charger.enable_suspend=true
 
+# These are framework properties.  They must be loaded from the system/product
+# side, not /vendor/build.prop, because vendor_init is not permitted to set
+# them on an enforcing build.
+audio.sys.noisy.broadcast.delay=600
+audio.sys.offload.pstimeout.secs=3
+persist.device_config.runtime_native.usap_pool_enabled=true
+persist.device_config.runtime_native.usap_pool_size_max=5
+renderthread.skia.reduceopstasksplitting=true
+ro.telephony.block_binder_thread_on_incoming_calls=false
+ro.build.shutdown_timeout=0
+
+# These properties use platform-private property types and therefore cannot
+# be initialized by vendor_init from /vendor/build.prop on an enforcing build.
+persist.vendor.dpm.feature=3
+persist.vendor.dpm.loglevel=7825
+vendor.mm.enable.qcom_parser=13631471
+persist.traced.enable=false
+
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
