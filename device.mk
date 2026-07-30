@@ -10,10 +10,6 @@ $(call inherit-product, vendor/GM/GM9PRO_sprout/GM9PRO_sprout-vendor.mk)
 # Properties
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# disable traced by default
-PRODUCT_PROPERTY_OVERRIDES += \
-     persist.traced.enable=false
-
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 

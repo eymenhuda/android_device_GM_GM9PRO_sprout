@@ -1,0 +1,4 @@
+# Legacy USB configuration scripts create language-string directories in
+# configfs; read access alone is insufficient.
+allow qti_init_shell configfs:dir w_dir_perms;
+allow qti_init_shell configfs:file create_file_perms;
