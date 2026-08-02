@@ -21,6 +21,7 @@
 mmap: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
 munmap: 1
 getuid: 1
+gettid: 1
 writev: 1
 prctl: arg0 == PR_SET_VMA || arg0 == PR_GET_DUMPABLE
 mprotect: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
