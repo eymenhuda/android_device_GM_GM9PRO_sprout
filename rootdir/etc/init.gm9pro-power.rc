@@ -1,0 +1,3 @@
+# Start libperfmgr only after Android has completed boot.
+on property:sys.boot_completed=1
+    setprop vendor.powerhal.init 1
