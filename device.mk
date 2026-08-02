@@ -318,7 +318,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
+    $(LOCAL_PATH)/rootdir/etc/init.gm9pro-power.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gm9pro-power.rc
 
 # Privapp Permissions
 PRODUCT_COPY_FILES += \
