@@ -556,8 +556,15 @@ on property:vold.decrypt=trigger_restart_framework
     start wcnss-service
 
 # Bring up the legacy QCA WLAN driver before the AIDL Wi-Fi HAL creates wlan0.
+# Use a background oneshot service so init doesn't block for 20s while waiting
+# for the WCSS firmware to be ready.
+service wlan_legacy_up /system/bin/sh -c "echo ON > /dev/wlan"
+    class main
+    oneshot
+    disabled
+
 on property:init.svc.vendor.wifi_hal_legacy=running
-    write /dev/wlan ON
+    start wlan_legacy_up
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
